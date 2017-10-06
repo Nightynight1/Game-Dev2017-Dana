@@ -1,21 +1,25 @@
 
+
+
 <script>
+function myAlert(myWords){
+    document.getElementById('myDiv1').innerHTML = myWords
+}    
+</script>
 
+<input id="myText1" size=100 type=text value="Fred <font color=red> Smith </font>."><br>
 
-function myCubeBetter(x){
-	return x*x*x*
-}<script>
-
-<input id"myName01" type=text value="3" >
-
-
-
-<div id="myDiv01">...</div>
-
-<input type=button value="Cube the number" onClick="{
-	document.getElementById('myDivOut01').innerHTML = 
-	myCubeBetter(document.getElementById("myName01').value)
+<input type=button value="Regular Function" onclick="{
+  myAlert(document.getElementById('myText1').value)
 }">
+
+<input type=button value="jQuery Function" onclick="{
+  alert('you do it')
+}">
+
+
+<div id="myDiv1">output goes here</div>
+
 
 
 
