@@ -1,0 +1,29 @@
+
+
+<script>// must view in  chrome
+function myOb(x){
+
+	this.myX =x;
+	this.myFun =function{
+	document.getElementById('myDiv01').innerHTML= 'the passed varible is' +this.myX
+	}
+}
+
+</script>
+<input type=text value=8 id="myText01">
+
+<input type=button value=click onclick="{
+	myObject = new myOb(document.getElementById('myText01').value)
+	myObjext.myFun()
+
+}">
+
+
+<div id="myDiv">...</div>
+
+
+component are 
+function defining the object	myOb
+a property inside the object 	MyX
+a function inside the object 	myFun
+in your program creating the object myObject = new myObject
