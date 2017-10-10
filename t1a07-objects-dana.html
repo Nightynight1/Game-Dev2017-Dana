@@ -12,12 +12,12 @@
 
 	</script>
 
-<input type=button value="Set Fred" onClick="{
-	myFred = new myStudent(20,'fred','http')
+<input type=button value="Set Dog" onClick="{
+	myDog = new myStudent(20,'Dog','http')
 }">
 
-<input type=button value="show Fred" onClick={
-	myFred.myShowInfo()
+<input type=button value="show Dog" onClick={
+	myDog.myShowInfo()
 }">
 
 
@@ -27,3 +27,22 @@
 }">
 
 <div id='myDiv1'>...<br></div>
+
+
+<div id="myDiv07">output here</div>
+<script>
+function myObject(){
+
+
+    this.store01 = 'Dog Object'
+    this.show = function (){
+         document.getElementById('myDiv07').innerHTML = this.store01 
+    }
+
+
+}
+</script>
+<input type=button value="Objects" onclick="{
+  myPerson = new myObject()
+  myPerson.show()
+}"> <br><br>
