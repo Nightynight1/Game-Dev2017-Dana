@@ -1,0 +1,39 @@
+<h2 align=center>Array by dana</h2>
+loop this ammount 
+
+
+<input id="myText01" type=number value=5><br>
+
+<input type=button value="for loop" onclick="{
+	
+	for (myLoop=1;   myLoop <= document.getElementById('myText01').value   ;   myLoop++){
+	    document.getElementById('myDiv01').innerHTML+=myLoop +'<br>'
+
+	}
+}"><br>
+
+<input type=button value="make Array" onclick="{
+	myArray = new Array()
+	for(myLoop=1; myLoop <= 5;   myLoop++){
+	    myArray[myLoop]  =  Math.round(Math.random()*10)
+
+	}  
+
+
+
+
+}"><br>
+
+
+<input type=button value="showArray" onclick="{
+	myTemp=''
+	for(myLoop=1; myLoop<=5;myLoop++){
+	   myTemp += 'MyArray['  +  myLoop  +  ']='  +  myArray[myLoop] +'<br>'
+
+	}
+document.getElementById('myDiv01').innerHTML = myTemp
+
+
+}"><br>
+
+<div id="myDiv01">...<br></div>
