@@ -4,8 +4,8 @@
 function myOb(x){
 
 	this.myX =x;
-	this.myFun =function{
-	document.getElementById('myDiv01').innerHTML= 'the passed varible is' +this.myX
+	this.myFun =function(){
+	document.getElementById('myDiv01').innerHTML= 'the passed varible is ' +this.myX
 	}
 }
 
@@ -14,7 +14,7 @@ function myOb(x){
 
 <input type=button value=click onclick="{
 	myObject = new myOb(document.getElementById('myText01').value)
-	myObjext.myFun()
+	myObject.myFun()
 
 }">
 
@@ -23,7 +23,21 @@ function myOb(x){
 
 
 component are 
-function defining the object	myOb
-a property inside the object 	MyX
-a function inside the object 	myFun
-in your program creating the object myObject = new myObject
+function defining the object	myOb <br>
+a property inside the object 	MyX<br>
+a function inside the object 	myFun<br>
+in your program creating the object myObject = new myObject<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
