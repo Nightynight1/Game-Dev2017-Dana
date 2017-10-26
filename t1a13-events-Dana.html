@@ -1,0 +1,109 @@
+
+<body onkeydown="{
+       document.getElementById('myDiv01')
+.innerHTML =  
+                'onkeydown event sent the letter '+String.fromCharCode(event.keyCode)
+  }">
+
+<h2 align=center>Events by Dana</h1>
+<ol>
+
+<li> type a key
+
+<li><input type=button value="onClick" onclick="{
+
+    
+    document.getElementById('myDiv01')
+.innerHTML =  'onClick event activated'
+  
+}">
+
+<li><input type=button value="onMouseOver" onMouseOver="{
+
+    
+    document.getElementById('myDiv01')
+.innerHTML =  'onMouseOver event activated'
+  
+}">
+
+
+<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:08FFD7;width:90px;height:10px;padding:20px;">
+:) </div>
+
+<script>
+function mDown(obj) {
+    obj.style.backgroundColor = "#1ec5e5";
+    obj.innerHTML = " :( ";
+}
+
+function mUp(obj) {
+    obj.style.backgroundColor="#D94A38";
+    obj.innerHTML=" ;) ";
+}
+</script>
+
+
+<p>Click the button to display the date.</p>
+
+<button onclick="displayDate()">The time is?</button>
+
+<script>
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+}
+</script>
+
+<p id="demo"></p>
+
+<div id="myDiv01">...</div>
+
+
+<style>
+.droptarget {
+    float: left; 
+    width: 100px; 
+    height: 35px;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Pick me up</p>
+</div>
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+
+
+<p id="demo"></p>
+
+<script>
+function dragStart(event) {
+    event.dataTransfer.setData("Text", event.target.id);
+}
+
+function dragging(event) {
+    document.getElementById("demo").innerHTML = "Grabbed";
+}
+
+function allowDrop(event) {
+    event.preventDefault();
+}
+
+function drop(event) {
+    event.preventDefault();
+    var data = event.dataTransfer.getData("Text");
+    event.target.appendChild(document.getElementById(data));
+    document.getElementById("demo").innerHTML = "Dropped";
+}
+</script>
+
+
+
