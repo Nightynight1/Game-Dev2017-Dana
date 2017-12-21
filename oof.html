@@ -1,0 +1,118 @@
+
+
+ <style>
+body {
+    background-color: grey;
+}
+
+h2 { 
+    color: #0343; font-size: 350%; text-shadow: 2px 2px #ff0000;  position:absolute; top:300px;
+ left:425px; border-style: solid; border-color: black;  box-sizing: border-box;  border: 20px solid black;
+}
+
+</style>
+
+
+
+
+<div id="myStart"  style="visibility:visible; width:500px; background-color:black" onclick="myFunction()"
+
+
+>
+
+<h2><blink>Click to Start...</blink>
+</h2>
+
+
+
+
+</div>
+<br>
+
+
+
+
+
+
+
+<script>
+function myFunction() {
+	alert("Game Over");
+}
+
+
+document.getElementById('myStart').onclick = function() {
+	document.getElementById('myStart').style.visibility = 'hidden'}
+
+
+
+
+</script>
+
+
+
+
+<script>
+
+
+function myFunctionAppear() {
+"myVar = setTimeout(myFunction, 5000)" }
+	document.GetElementById("myWumpus01").write
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+<div style=" visibility:hidden; position: absolute; left: px; top: 40px;"> 
+    <input type="image" id="myWumpus01" alt=onclick=onclick="{
+ 
+   document.getElementById('myWumpus01').style.visibility = 'hidden'}
+"
+
+ src="https://i.redd.it/yb8x941uhjsz.png" width="114" height="100">
+
+</div>
+
+
+
+<div id=Output ></div>
+
+<script>
+
+var total = 0;
+
+document.getElementById('zero').onclick = zero;
+document.getElementById('add5').onclick = add5;
+document.getElementById('add10').onclick = add10;
+document.getElementById('sub1').onclick = sub1;
+
+function zero() {
+  total = 0;
+  document.getElementById('result').innerHTML = total;
+}
+
+function add5() {
+  total = total + 5;
+  document.getElementById('result').innerHTML = total;
+}
+
+function add10() {
+  total = total + 10;
+  document.getElementById('result').innerHTML = total;
+}
+
+function sub1() {
+  total = total - 1;
+  document.getElementById('result').innerHTML = total;
+}
+
+
+</script>
